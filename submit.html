@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB IN</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JOB IN </h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a class="reservation" href="#">RESERVATION</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+    <div class="slider">
+        <div class="images">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <input type="radio" name="slide" id="img4">
+            <img src="./1.jpg" class="m1" alt="img1">
+            <img src="./2.jpg" class="m2" alt="img2">
+            <img src="./3.jpg" class="m3" alt="img3">
+            <img src="./4.jpg" class="m4" alt="img4">
+        </div>
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+        </div>
+    </div>
+    </div>
+            <div class="love">
+                <figure>
+                    <img src="./4.jpg" alt="">
+                </figure>
+                <div class="slide1">
+                    <a href="https://www.linkedin.com/checkpoint/lg/sign-in-another-account">
+                        <img src="./linkdin.jpg" alt=""></a>
+                    <a href="https://www.naukri.com/nlogin/login?URL=http://www.naukri.com/mnjuser/performance?id=">
+                        <img src="./naukari.png" alt="">
+                    <a href="https://www.canva.com/resumes/">
+                        <img src="./resume.jpg" alt=""></a>
+                    <a href="https://in.indeed.com/"><img src="./indeed.jpg" alt=""></a>
+                </div>
+            <script>
+                const figureImg = document.querySelector('figure img');
+                const Imgs = document.querySelectorAll('.slide1 img');
+                Imgs.forEach(function(img) {
+                    // console.log(img);
+                    img.addEventListener('click',function(e) {
+                        // console.log(e.target.src);
+                        // console.log(figureImg.src);
+                        figureImg.src = e.target.src;
+                    })
+                })
+            </script>
+        </div>
+</body>
+</html>
